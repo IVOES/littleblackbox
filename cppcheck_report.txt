@@ -1,0 +1,14 @@
+src/certs.c:21:9: style: The scope of the variable 'port' can be reduced. [variableScope]
+    int port = DEFAULT_SSL_PORT;
+        ^
+src/network.c:77:9: warning: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+        fprintf(stderr, "ERROR: Invalid IP header length: %u bytes\n", size_ip);
+        ^
+src/network.c:85:9: warning: %u in format string (no. 1) requires 'unsigned int' but the argument type is 'signed int'. [invalidPrintfArgType_uint]
+        fprintf(stderr, "ERROR: Invalid TCP header length: %u bytes\n", size_tcp);
+        ^
+src/sql.c:15:9: style: The scope of the variable 'err_code' can be reduced. [variableScope]
+    int err_code = 0;
+        ^
+nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingInclude]
+
